@@ -26,7 +26,7 @@ Site Map
 <img src="_resources/629c20b332a090d680dface57413914f.png" width=125 alt="Docker LOGO">  
 Docker is a virtualizing environment which is used to run multiple OS embarked inside a single hardware processor. Docker virutualizes OS rather than virtualizing hardware like in VM/HyperVisor. These dockers are structurually similar to VM/HyperVisor but unlike it, dockers are fast, lightweight, sandbox and easy to deploy. Docker engines uses small functional units called containers which are simply micro-computers, they have their own memory, network & dependencies. These micro-computers can be as powerful as you want it to be. So, How does these stuff work so fast?? and be light-weight?? Here is the catch... These are purely OS based which means, a linux kernel based docker can only create and use a linux based container.. they cant support anyother OS, but recently an year ago Microsoft came up with WSL as a solution to this problem.
 
-![Differences between a VM and Docker](_resources/Untitled Diagram2.png)  
+![Differences between a VM and Docker](_resources/123213123131.png)  
 
 - installing docker  
 
