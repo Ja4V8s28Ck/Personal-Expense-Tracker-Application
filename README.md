@@ -31,7 +31,7 @@
 6. customers
 ```
 
-### Docker
+## Docker
 
 <img src="_resources/629c20b332a090d680dface57413914f.png" width=125 alt="Docker LOGO">  
 Docker is a virtualization environment which is used to run multiple OS embarked inside a single hardware processor. Docker virtualize OS rather than virtualization hardware like in VM/HyperVisor. These dockers are structurally similar to VM/HyperVisor but unlike it, dockers are fast, lightweight, sandbox and easy to deploy. Docker engines uses small functional units called containers which are simply micro-computers, they have their own memory, network & dependencies. These micro-computers can be as powerful as you want it to be. So, How does these stuff work so fast?? and be light-weight?? Here is the catch... These are purely OS based which means, a Linux kernel based docker can only create and use a Linux based container.. they cant support any other OS, but recently an year ago Microsoft came up with WSL as a solution to this problem.
@@ -42,7 +42,7 @@ Docker is a virtualization environment which is used to run multiple OS embarked
 
   `apt install docker.io`
 
-#### Creating and Working with Docker
+### Creating and Working with Docker
 
 1. Choose an OS to work with. (Lets choose CentOS).
 2. Download the image of the specific OS using docker.
@@ -80,20 +80,20 @@ To save myself from wasting time by fondling with these codes, we wrote a script
 
 Voila, docker YAML was a success..., Moving on to Kubernetes -->
 
-### Kubernetes
+## Kubernetes
 
 <img src="_resources/7049552d12ea67dbb20aac93edef6e62.png" width=90px>
 Kubernetes, also known as K8s, is an open-source system for automating deployment, scaling, and management of containerized applications. Docker and Kubernetes go hand in hand with each other as one of its worker modules. 
 Things got a little weird when we couldn't access our deployment or pods from our machine, turns out all these are under private IP address and unlike docker they are not exposed automatically and it should be manually exposed by a Kubernetes service. These Kubernetes services are crucial in deployment as they get to tell the nature of orchestration of pods/deployments and expose applications.
 
-#### Hierarchy of Kubernetes
+### Hierarchy of Kubernetes
 
 ```mermaid
 graph TD
 Deployment --> Pod --> Node
 ````
 
-#### Types of Kubernetes services
+### Types of Kubernetes services
 
 - ClusterIP - Default service for communication between Kube API and clusters.
 - LoadBalancer -  This type of service helps us to expose the service by using the cloud provider or to load balance a server with multiple or single replica(s).
