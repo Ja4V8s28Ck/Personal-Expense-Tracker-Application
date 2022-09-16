@@ -1,18 +1,28 @@
 # Personal Expense Tracker Application
 
+### 🚧 Still Under Construction
+
 - Setting up application environment
-  - [x] Linux - Bullseye - 5GB RAM - i5 7th Gen
-  - [x] Python 3.10.6
-  - [x] Flask
-  - [x] Docker & Docker-Compose
-  - [x] Kubernetes \[Kubectl & Minikube]
+  - [X] Linux - Bullseye - 5GB RAM - i5 7th Gen
+  - [X] Python 3.10.6
+  - [X] Flask
+  - [X] [Docker & Docker-Compose](#docker)
+  - [X] [Kubernetes \[Kubectl & Minikube\]](#kubernetes)
+  - [X] [Empathy Map](#empathy-map)
 
 - Implementing Web Application
+
 - Integrating SendGrid Service
-- Deployement of App in IBM Cloud
+
+- Deployment of App in IBM Cloud
+
+## Empathy Map
+
+![empathy_map.png](empathy_map.png)
+
+## Site Map
 
 ```
-Site Map
 1. index
 2. login
 3. dashboard
@@ -24,13 +34,13 @@ Site Map
 ### Docker
 
 <img src="_resources/629c20b332a090d680dface57413914f.png" width=125 alt="Docker LOGO">  
-Docker is a virtualizing environment which is used to run multiple OS embarked inside a single hardware processor. Docker virutualizes OS rather than virtualizing hardware like in VM/HyperVisor. These dockers are structurually similar to VM/HyperVisor but unlike it, dockers are fast, lightweight, sandbox and easy to deploy. Docker engines uses small functional units called containers which are simply micro-computers, they have their own memory, network & dependencies. These micro-computers can be as powerful as you want it to be. So, How does these stuff work so fast?? and be light-weight?? Here is the catch... These are purely OS based which means, a linux kernel based docker can only create and use a linux based container.. they cant support anyother OS, but recently an year ago Microsoft came up with WSL as a solution to this problem.
+Docker is a virtualization environment which is used to run multiple OS embarked inside a single hardware processor. Docker virtualize OS rather than virtualization hardware like in VM/HyperVisor. These dockers are structurally similar to VM/HyperVisor but unlike it, dockers are fast, lightweight, sandbox and easy to deploy. Docker engines uses small functional units called containers which are simply micro-computers, they have their own memory, network & dependencies. These micro-computers can be as powerful as you want it to be. So, How does these stuff work so fast?? and be light-weight?? Here is the catch... These are purely OS based which means, a Linux kernel based docker can only create and use a Linux based container.. they cant support any other OS, but recently an year ago Microsoft came up with WSL as a solution to this problem.
 
 ![Differences between a VM and Docker](_resources/123213123131.png)  
 
 - installing docker  
 
-	`apt install docker.io`
+  `apt install docker.io`
 
 #### Creating and Working with Docker
 
@@ -54,7 +64,7 @@ docker run -i -d --name dockdb -e MYSQL_ROOT_PASSWORD="" mysql
 # Setting up a password is necessary for mysql container to work.
 ```
 
-#### Dockerfile Attributes
+#### Docker-file Attributes
 
 ```
 FROM <IMAGE>
@@ -66,17 +76,17 @@ CMD ["sh","ls"]
 ENV <VAR> <VALUE>
 ```
 
-To save myself from wasting time by fondling with these codes, I wrote a script to fasten things up, which can create and destroy images & containers. Seems like there is a way to create multiple containers simultaneously using [docker-compose](https://docs.docker.com/compose/compose-file/).
+To save myself from wasting time by fondling with these codes, we wrote a script to fasten things up, which can create and destroy images & containers. Seems like there is a way to create multiple containers simultaneously using [docker-compose](https://docs.docker.com/compose/compose-file/).
 
 Voila, docker YAML was a success..., Moving on to Kubernetes -->
 
 ### Kubernetes
 
 <img src="_resources/7049552d12ea67dbb20aac93edef6e62.png" width=90px>
-Kubernetes, also known as K8s, is an open-source system for automating deployment, scaling, and management of containerized applications. Docker and Kubernetes go hand in hand with eachother as one of its worker modules. 
-Things got a lil weird when I couldn't access my deployement or pods from my machine, turns out all these are under private IP address and unlike docker they are not exposed automatically and it should be manually exposed by a kubernetes service. These kubernetes services are crucial in deployement as they get to tell the nature of orchestration of pods/deployments and expose applications.
+Kubernetes, also known as K8s, is an open-source system for automating deployment, scaling, and management of containerized applications. Docker and Kubernetes go hand in hand with each other as one of its worker modules. 
+Things got a little weird when we couldn't access our deployment or pods from our machine, turns out all these are under private IP address and unlike docker they are not exposed automatically and it should be manually exposed by a Kubernetes service. These Kubernetes services are crucial in deployment as they get to tell the nature of orchestration of pods/deployments and expose applications.
 
-#### Heirarchy of Kubernetes
+#### Hierarchy of Kubernetes
 
 ```mermaid
 graph TD
@@ -92,7 +102,7 @@ Deployment --> Pod --> Node
 
 ![Docker Services](_resources/a7d5cce1b78152b1a5bdf50cf7132c7b.png)
 
-#### This is my interpretation of using 3 pods with single node in kubernetes.
+#### This is our interpretation of using 3 pods with single node in Kubernetes.
 
 ![Kubernetes using docker](_resources/kubernetes.png)
 
@@ -103,7 +113,7 @@ For example, Network Address = 10.18.7.0, CIDR = 24
  Node B - 10.18.7.2
  Node C - 10.18.7.3
 
-#### This is my interpretation of using 1 pods with single node in kubernetes.
+#### This is our interpretation of using 1 pods with single node in Kubernetes.
 
 - installing minikube
 
@@ -129,10 +139,8 @@ kube expose
 kube edit
 ```
 
-#### Constrains when trying to implement kubernetes with docker
+#### Constrains when trying to implement Kubernetes with docker
 
 ![](_resources/da5c27c86414e36e2d458ce06e5ee35c.png)  
 
 ![](_resources/84f09c153e9b92b9124ed1fb21c55cee.png)  
-
-### More to be added in the near future.
