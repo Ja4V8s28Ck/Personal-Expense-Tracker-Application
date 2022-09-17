@@ -9,6 +9,7 @@
   - [X] [Docker & Docker-Compose](#docker)
   - [X] [Kubernetes \[Kubectl & Minikube\]](#kubernetes)
   - [X] [Empathy Map](#empathy-map)
+  - [X] [Literature Survey](Literature_Survey.pdf)
 
 - Implementing Web Application
 
