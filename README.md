@@ -9,7 +9,7 @@
   - [X] [Docker & Docker-Compose](#docker)
   - [X] [Kubernetes \[Kubectl & Minikube\]](#kubernetes)
   - [X] [Empathy Map](#empathy-map)
-  - [X] [Literature Survey](Literature_Survey.pdf)
+  - [X] [Literature Survey](project-design-&-planning/ideation-phase/literature_survey.pdf)
 
 - Implementing Web Application
 
@@ -19,7 +19,7 @@
 
 ## Empathy Map
 
-![empathy_map.png](empathy_map.png)
+![empathy_map.png](project-design-&-planning/ideation-phase/empathy_map.png)
 
 ## Site Map
 
