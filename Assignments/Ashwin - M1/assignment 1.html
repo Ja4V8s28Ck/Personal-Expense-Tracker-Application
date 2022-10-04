@@ -1,0 +1,28 @@
+<html>
+<head><b>IBM ASSIGNMENT 1-Ashwin.G[Program To Display Basic Info]</b></head>
+<title>
+<script LANGUAGE="JavaScript" type="text/javascript">
+function display() {
+  DispWin = window.open('','NewWin', 'toolbar=no,status=no,width=300,height=200')
+  message = "<ul><li><b>NAME: </b>" + document.form.yourname.value;
+  message += "<li><b>AGE: </b>" + document.form.phone.value + "</ul>";
+  message += "<li><b>EMAIL: </b>" + document.form.email.value;
+  message += "<li><b>QUALIFICATION: </b>" + document.form.address.value;
+  DispWin.document.write(message);
+}
+         BASIC INFO
+         </title>s
+         </script>
+         </head>
+         <body>
+         <h1> BASIC INFO </h1>
+         When submit button is entered,the data we entered will be displayed in a pop-up window.
+         <form>
+           NAME: <input type="text" name="form_name"><br><br>
+           AGE:<input type="number" name="form_age"><br><br>
+           EMAIL ID: <input type="email"name="form_email"><br><br>
+           QUALIFICATIONS:<input type="address"name="form_address"><br><br>
+           <input type="submit" value="submit">
+           </form>
+           </body>
+           </html>
