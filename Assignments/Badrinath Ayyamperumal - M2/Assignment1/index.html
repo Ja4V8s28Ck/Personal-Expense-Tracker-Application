@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<title>IBM Assignment</title>
+<body style="background: black;">
+	<section style="background-color: black;">
+		<h2 class="fw-bold" style="margin-top:20px;text-align: center;">Assignment 1</h2>
+			<form style="margin: 50px;">
+				<div class="mb-3"><input class="form-control" type="text" name="name" id="name" placeholder="Name"></div>
+				<div class="mb-3"><input class="form-control" type="text" name="qualification" id="qualification" placeholder="Qualification"></div>
+				<div class="mb-3"><input class="form-control" type="number" min='1' max='100' name="age" id="age" placeholder="Age"></div>
+				<div class="mb-3"><input class="form-control" type="email" name="email" id="email" placeholder="Email"></div>
+				<div class="mb-3"><button style="background-color: orangered; --bs-btn-border-color :orangered;--bs-btn-hover-border-color:orangered;--bs-btn-focus-shadow-rgb:orangered;" onclick="show_table()" class="btn btn-primary d-block w-100" type="button">Submit</button></div>
+			</form>
+	</section>
+<table id="displayTable"></table>
+<!-- <footer class="bg-dark" style="background: rgb(14,41,31);">
+	<h6 class="text-center" style="background: rgb(14,41,31);">
+		<strong>
+			<span style="background-color: rgb(31, 41, 14);">IBM</span>
+			<span style="color: rgb(225, 83, 14); background-color: rgb(63, 68, 72);">Project</span>
+			<span style="color: rgba(225, 13, 13, 0); background-color: rgb(63, 68, 72);">&nbsp;</span>
+			<span style="background-color: rgb(63, 68, 72);">2022</span>
+		</strong>
+		<br>
+	</h6>
+</footer> -->
+</body>
+<script>
+function show_table(){
+	document.getElementById("displayTable").innerHTML = "";
+	document.getElementById("displayTable").innerHTML += "<tbody><tr><th>Name</th><th>"+window.document.getElementById("name").value+"</th></tr><tr><th>Qualification</th><th>"+window.document.getElementById("qualification").value+"</th></tr><tr><th>Age</th><th>"+window.document.getElementById("age").value+"</th></tr><tr><th>Email</th><th>"+window.document.getElementById("email").value+"</th></tr></tbody>";
+}
+</script>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&display=swap">
+</html>
