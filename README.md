@@ -135,7 +135,7 @@ Exposing is a crucial part in deploying application to the external network for 
 4. Using master node in IBM CLI (Only works on IBM Cloud Kubernetes)
 	- IBM Cloud has it's own master node, which routes the apps to internet.
 	
-	`kube get nodes`
+		`kube get node`
 
 - installing minikube
 
@@ -215,8 +215,7 @@ spec:
   type: NodePort # Can be changed
   ports:
   - port: # Port to expose
-    nodePort: # Another port to reroute the exposing port to internet
-	# Range is limited to  30000 - 32767
+    nodePort: # Another port to reroute the exposing port to internet, range is limited to  30000 - 32767
     protocol: TCP # UDP is also supported
   selector:
     app: # Name of the pod/deployment to be exposed
