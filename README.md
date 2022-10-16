@@ -1,25 +1,20 @@
 # Personal Expense Tracker Application
 
-### 🚧 Still Under Construction
+### 🚧 Under Construction
 
 - Setting up application environment
   - [X] Linux - Bullseye - 5GB RAM - i5 7th Gen
   - [X] Python 3.10.x
   - [X] Flask
+  - [X] IBM Cloud
   - [X] [Docker & Docker-Compose](#docker)
   - [X] [Kubernetes \[Kubectl & Minikube\]](#kubernetes)
-  - [X] [Empathy Map](#empathy-map)
-  - [X] [Literature Survey](Project%20Design%20&%20Planning/Ideation%20Phase/Literature_Survey.pdf)
 
 - Implementing Web Application
 
 - Integrating SendGrid Service
 
 - Deployment of App in IBM Cloud
-
-## Empathy Map
-
-![Empathy Map.png](Project%20Design%20&%20Planning/Ideation%20Phase/empathy_map.png)
 
 ## Site Map
 
