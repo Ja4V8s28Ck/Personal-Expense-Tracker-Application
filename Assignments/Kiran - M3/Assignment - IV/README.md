@@ -1,7 +1,8 @@
-### Assignment 4
+### Assignment IV
 
 1. Pulling image of hello-world.
-[1.mp4](1.mp4)
+
+![1.png](1.png)
 
 2. Dockerfile for JobPortal application.
 
@@ -16,7 +17,9 @@ CMD ["/bin/sh","app.sh"]
 ```
 
 3. Created an IBM container registry and deployed hello-world image in it.
-[3.mp4](3.mp4)
+
+![3.png](3.png)
 
 4. Created a Kubernetes cluster and exposed it using NodePort.
-[4.mp4](4.mp4)
+
+![4.png](4.png)
