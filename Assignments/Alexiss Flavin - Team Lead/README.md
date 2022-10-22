@@ -8,7 +8,8 @@
 ## - Assignment - IV
 
 1. Pulling image of hello-world.  
-[1.gif](Assignment%20-%20IV/1.gif)  
+
+![1.gif](Assignment%20-%20IV/1.gif)  
 
 2. Dockerfile for JobPortal application.  
 
@@ -23,11 +24,14 @@ CMD ["/bin/sh","app.sh"]
 ```
 
 3. Created an IBM container registry and deployed hello-world image in it.  
-[3_1.gif](Assignment%20-%20IV/3.1.gif)  
-[3_2.gif](Assignment%20-%20IV/3.2.gif)
+
+![3_1.gif](Assignment%20-%20IV/3.1.gif)  
+
+![3_2.gif](Assignment%20-%20IV/3.2.gif)
 
 4. Created a Kubernetes cluster and exposed it using NodePort.
-[4.gif](Assignment%20-%20IV/4.gif)  
+
+![4.gif](Assignment%20-%20IV/4.gif)  
 
 
 ### Watson Assistant's actions and steps (Assignment III)  
