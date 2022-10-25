@@ -4,7 +4,7 @@
 
 - Setting up application environment
   - [X] Linux - Bullseye - 5GB RAM - i5 7th Gen
-  - [X] Python 3.10.x
+  - [X] Python 3.11.x
   - [X] Flask
   - [X] IBM Cloud
   - [X] [Docker & Docker-Compose](#docker)
