@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tsukuyomi
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: tsukuyomi
+  template:
+    metadata:
+      labels:
+        name: tsukuyomi
+    spec:
+      containers:
+      - name: docksql
+        image: html_database:latest
+        ports:
+          - containerPort: 50000
+        securityContext:
+          privileged: true
+      - name: dockpy
+        image: html_website:latest
+        ports:
+          - containerPort: 81

@@ -1,0 +1,10 @@
+services:
+    database:
+        container_name: docksql
+        build: ./db
+   
+    website:
+        container_name: dockpy
+        build: ./py
+        depends_on:
+            - database

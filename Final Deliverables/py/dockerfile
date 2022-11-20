@@ -1,0 +1,8 @@
+FROM python
+WORKDIR /root/Desktop/
+ADD . html/
+WORKDIR /root/Desktop/html
+RUN pip install -r req
+ENV api_key=api-XYZ
+ENV bassward=R!gLt9U*ecrAw_C_1oru
+CMD python app.py
